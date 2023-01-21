@@ -1,0 +1,12 @@
+.flexbox-container{
+    margin: 35px;
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+    background: rgb(250, 250, 250);
+    /* flex-direction: row; 
+    flex-wrap: wrap;
+    align-content: flex-start; */
+}
