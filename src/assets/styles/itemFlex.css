@@ -1,7 +1,14 @@
 .section{
-    height: max-content;
     width: 49%;
     margin-bottom: 20px;
+    padding: 15px 10px;
+    border: 2px solid #8FE858;
+    text-align: justify;
+}
+
+.section-small{
+    width: 32%;
+    margin-bottom: 10px;
     padding: 15px 10px;
     border: 2px solid #8FE858;
     text-align: justify;
@@ -16,4 +23,28 @@
 li{
     margin-left: 10%;
     padding: 10px 0;
+}
+
+.container-tec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.widge{
+    display: flex;
+}
+.icon-barras{
+    height: 25px;
+    margin: 8.5px;
+}
+h4{
+    float: left;
+    padding: 10px;
+}
+
+.icon-social{
+    height: 30px;
+    margin: 9.5px;
+    float: left;
 }

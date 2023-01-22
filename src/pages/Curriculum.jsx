@@ -7,40 +7,40 @@ function Curriculum() {
         tecnologias: [
             {
                 lenguaje: 'JavaScript',
-                icon: '../assets/icons/barraJS.png'
+                icon: "../../public/icons/barraJS.png"
             },
             {
                 lenguaje: 'Java',
-                icon: '../assets/icons/barraJava.png'
+                icon: "../../public/icons/barraJava.png"
             },
             {
                 lenguaje: 'C++',
-                icon: '../assets/icons/barraC++.png'
+                icon: '../../public/icons/barraC++.png'
             },
             {
                 lenguaje: 'C',
-                icon: '../assets/icons/barraC.png'
+                icon: '../../public/icons/barraC.png'
             },
             {
                 lenguaje: 'CSS',
-                icon: '../assets/icons/barraCSS.png'
+                icon: '../../public/icons/barraCSS.png'
             },
             {
                 lenguaje: 'HTML',
-                icon: '../assets/icons/barraHTML.png'
+                icon: '../../public/icons/barraHTML.png'
             },
         ],
         contacto: [
             {
-                icon: '../assets/icons/iconFB.png',
+                icon: '../../public/icons/iconFB.png',
                 data: 'Francisco Escobar Gut'
             },
             {
-                icon: '../assets/icons/iconIG.png',
+                icon: '../../public/icons/iconIG.png',
                 data: '@francis_esgut'
             },
             {
-                icon: '../assets/icons/iconLi.png',
+                icon: '../../public/icons/iconLi.png',
                 data: 'Francisco de Jesús Escobar Gutiérrez'
             }
         ]

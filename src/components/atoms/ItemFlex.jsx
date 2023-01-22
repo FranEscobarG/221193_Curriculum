@@ -1,4 +1,6 @@
 import Caption from "../atoms/Caption";
+import Widge from "../atoms/Widge";
+import WidgeSmall from "../atoms/WidgeSmall";
 import '../../assets/styles/itemFlex.css';
 
 function ItemFlex({tecnologias, contacto}) {
@@ -35,7 +37,40 @@ function ItemFlex({tecnologias, contacto}) {
 
             <div class="section">
                 <Caption msn={"Tecnologías"}/>
-                <p>Soy un estudiante de Ingenieria en Desarrollo de Software en la Universidad Politecnica de Chiapas, naci en Tuxtla Gutierrez, Chiapas. Tengo conocimientos en JavaScript, C, C++ y Java, soy bueno con la logica matematica y no suelo tener problemas ante la resolucion de problemas, aprendo y me adapto rapidamente.</p>
+                <div className="container-tec">
+                    {
+                        tecnologias.map( (item) => (
+                            <Widge item={item}/>
+                        ))
+                    }
+                </div>
+            </div>
+
+            <div class="section-small">
+                <Caption msn={"Formacion Academica"}/>
+                <ul>
+                    <li>Español</li>
+                    <li>Ingles (nivel B2)</li>
+                </ul>
+            </div>
+            <div class="section-small">
+                <Caption msn={"Formacion Academica"}/>
+                <ul>
+                    <li>Futbol</li>
+                    <li>Videojuegos</li>
+                    <li>Correr</li>
+                    <li>Juegos de Azar</li>
+                </ul>
+            </div>
+            <div class="section-small">
+                <Caption msn={"Formacion Academica"}/>
+                <div className="container-tec">
+                    {
+                        contacto.map( (itemC) => (
+                            <WidgeSmall itemC={itemC}/>
+                        ))
+                    }
+                </div>
             </div>
         </>
      );
