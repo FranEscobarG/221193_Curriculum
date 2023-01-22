@@ -4,71 +4,33 @@ import '../assets/styles/curriculum.css';
 
 function Curriculum() {
     const datos = {
-        nombre: 'Soy Carlos Lievano Ovando del B',
-        Carrera: 'Ingenieria en Desarrollo de Software',
-        correo: 'escobar.gutierrez.3@gmail.com',
-        telefono: 'Tel. 961 304 61 41',
-        lugar: 'Fracc. Real del Bosque, calle Olivos, #783-B',
-        sobreMi:
+        tecnologias: [
             {
-                titulo: 'Sobre mi',
-                contenido: 'Soy un estudiante de Ingenieria en Desarrollo de Software en la Universidad Politecnica de Chiapas, naci en Tuxtla Gutierrez, Chiapas. Tengo conocimientos en JavaScript, C, C++ y Java, soy bueno con la logica matematica y no suelo tener problemas ante la resolucion de problemas, aprendo y me adapto rapidamente. '
+                lenguaje: 'JavaScript',
+                icon: '../assets/icons/barraJS.png'
             },
-        formacionAcad:
             {
-                titulo: 'Formación Academica',
-                contenido: {
-                    secundaria: 'Esc. Sec. Tecnica No. 156 Real del Bosque',
-                    bachillerato: 'Preparatoria No. 2. del Estado de Chiapas.',
-                    universidad: 'Universidad Pólitecnica del Estado de Chiapas.'
-                }
+                lenguaje: 'Java',
+                icon: '../assets/icons/barraJava.png'
             },
-        habilidades:
             {
-                titulo: 'Habilidades',
-                contenido: ['hjbhjbkj', 'hjbhjbkj', 'hjbhjbkj', 'hjbhjbkj']
+                lenguaje: 'C++',
+                icon: '../assets/icons/barraC++.png'
             },
-        habilidadesProg:
             {
-                titulo: 'Habilidades de Programación',
-                contenido: [
-                    {
-                        lenguaje: 'JavaScript',
-                        icon: '../assets/icons/barraJS.png'
-                    },
-                    {
-                        lenguaje: 'Java',
-                        icon: '../assets/icons/barraJava.png'
-                    },
-                    {
-                        lenguaje: 'C++',
-                        icon: '../assets/icons/barraC++.png'
-                    },
-                    {
-                        lenguaje: 'C',
-                        icon: '../assets/icons/barraC.png'
-                    },
-                    {
-                        lenguaje: 'CSS',
-                        icon: '../assets/icons/barraCSS.png'
-                    },
-                    {
-                        lenguaje: 'HTML',
-                        icon: '../assets/icons/barraHTML.png'
-                    },
-                ]
+                lenguaje: 'C',
+                icon: '../assets/icons/barraC.png'
             },
-        idiomas:
             {
-                titulo: 'Idiomas',
-                contenido: ['Español', 'Ingles (nivel B2)']
+                lenguaje: 'CSS',
+                icon: '../assets/icons/barraCSS.png'
             },
-        hobbies:
             {
-                titulo: 'Hobbies',
-                contenido: ['Futbol', 'Videojuegos', 'Correr', 'Juegos de Azar', 'Programar']
+                lenguaje: 'HTML',
+                icon: '../assets/icons/barraHTML.png'
             },
-        contacto:[
+        ],
+        contacto: [
             {
                 icon: '../assets/icons/iconFB.png',
                 data: 'Francisco Escobar Gut'
@@ -82,17 +44,15 @@ function Curriculum() {
                 data: 'Francisco de Jesús Escobar Gutiérrez'
             }
         ]
+            
     }
-
 
     return ( 
         <>
             <div className="container">
-                <Header/>
-                <FlexContainer/>
-                <div className="box-bottom"> 
-                    <div className="item-box"></div>
-                </div>
+                <Header/> {/* ESTE SE DESESTRURAR CON PUNTOS */}
+                <FlexContainer itemFlex = {datos}/> {/* ESTE SE DESESTRURAR CON .map() */}
+
             </div>
             
         </>

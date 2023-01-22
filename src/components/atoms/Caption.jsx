@@ -2,7 +2,7 @@ function Caption({msn}){
     
     return(
         
-        <h2>{msn}</h2> //Aca solo imprimimos titulos
+        <h2 className="caption">{msn}</h2> //Aca solo imprimimos titulos
         
     )
 }

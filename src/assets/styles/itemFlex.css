@@ -1,6 +1,19 @@
 .section{
+    height: max-content;
     width: 49%;
     margin-bottom: 20px;
-    /* margin: 20px; */
+    padding: 15px 10px;
     border: 2px solid #8FE858;
+    text-align: justify;
+}
+
+.caption{
+    text-align: center;
+    color: #E99E47;
+    margin-bottom: 20px;
+}
+
+li{
+    margin-left: 10%;
+    padding: 10px 0;
 }

@@ -1,6 +1,7 @@
 header{
     height: 190px;
-    padding: 20px 20px 0 20px;
+    width: 100%;
+    padding-top: 20px;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     background-color: #8FE858;
@@ -8,6 +9,8 @@ header{
 
 .myPerfil{
     height: 170px;
+    width: 95%;
+    margin: auto;
     padding: 10px 15px;
     display: flex;
     color: rgb(219, 139, 47);
@@ -24,7 +27,7 @@ header{
 }
 
 .txt_myPerfil{
-    margin-top: 20px;
+    margin-top: 15px;
     font-size: 1.2rem;
 }
 
