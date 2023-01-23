@@ -47,14 +47,14 @@ function ItemFlex({tecnologias, contacto}) {
             </div>
 
             <div class="section-small">
-                <Caption msn={"Formacion Academica"}/>
+                <Caption msn={"Idiomas"}/>
                 <ul>
                     <li>Español</li>
                     <li>Ingles (nivel B2)</li>
                 </ul>
             </div>
             <div class="section-small">
-                <Caption msn={"Formacion Academica"}/>
+                <Caption msn={"Hobbies"}/>
                 <ul>
                     <li>Futbol</li>
                     <li>Videojuegos</li>
@@ -63,7 +63,7 @@ function ItemFlex({tecnologias, contacto}) {
                 </ul>
             </div>
             <div class="section-small">
-                <Caption msn={"Formacion Academica"}/>
+                <Caption msn={"Contacto"}/>
                 <div className="container-tec">
                     {
                         contacto.map( (itemC) => (
